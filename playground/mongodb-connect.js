@@ -8,7 +8,7 @@ if(err){
 console.log('Connected to mongoDB server');
 
 
-/*db.collection('Todos').insertOne({
+db.collection('Todos').insertOne({
 	text:'Something to do',
 	completed: false
 },(err,result)=>{
@@ -17,7 +17,7 @@ console.log('Connected to mongoDB server');
 	}
 	console.log(JSON.stringify(result.ops,undefined,2));
 });
-*/
+
 
 db.collection('Users').insertOne({
 	name: 'Mukul',
